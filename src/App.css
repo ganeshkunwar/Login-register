@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+ background: url('./Components/Assets/bg-header-mobile.png') no repeat;
+ background-size: cover;
+ background-position:center;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgb(11, 26, 71);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+
+}
+.logo{
+  font-size: 2em;
+  color:#fff;
+  user-select: none;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -6PX;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scale(0);
+  transition: transform .5s;
+  
+}
+.navigation a:hover::after{
+  transform-origin: left;
+transform: scaleX(1);
+
+}
+
+
+.navigation .btnLogin-popup{
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px circle #fff;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  margin-left: 40px;
+  transition: .5s;
+}
+.navigation .btnLogin-popup:hover{
+  background:#f9f5f5 ;
+  color: #282c34;
 }

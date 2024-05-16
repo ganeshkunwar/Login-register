@@ -34,6 +34,7 @@ header{
 .logo{
   font-size: 2em;
   color:#fff;
+  align-items: center;
   user-select: none;
 }
 .navigation a {
@@ -84,4 +85,11 @@ transform: scaleX(1);
 .navigation .btnLogin-popup:hover{
   background:#f9f5f5 ;
   color: #282c34;
+}
+.wrapper{
+  position: relative;
+  width: 400PX;
+  height: 440px;
+  background:rgb(135, 152, 227);
+  border: 2px solid #2f5197;
 }

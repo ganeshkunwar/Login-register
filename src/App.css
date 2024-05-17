@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
+ 
 }
 
 .body {
@@ -34,7 +35,6 @@ header{
 .logo{
   font-size: 2em;
   color:#fff;
-  align-items: center;
   user-select: none;
 }
 .navigation a {
@@ -90,6 +90,12 @@ transform: scaleX(1);
   position: relative;
   width: 400PX;
   height: 440px;
-  background:rgb(135, 152, 227);
+  background:rgb(154, 167, 223);
   border: 2px solid #2f5197;
+  border-radius: 20px ;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgb(0, 0, 5);
+  /* display:flex; */
+
+  justify-content: center;
 }

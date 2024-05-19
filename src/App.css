@@ -96,6 +96,16 @@ transform: scaleX(1);
   backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgb(0, 0, 5);
   /* display:flex; */
-
-  justify-content: center;
+ justify-content: center;
 }
+.wrapper .form-box {
+  width: 100%;
+  padding: 90px;
+
+}
+.form-box h2{
+  font-size: 2em;
+  color: #282c34;
+  text-align: center;
+}
+

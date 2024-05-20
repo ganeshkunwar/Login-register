@@ -20,21 +20,31 @@ function App() {
           <div className="input-box">
             <span className="icon"></span>
             <input type="email" required />
-            < > Email</>
-          </div>
-          <div className="input-box">
-            <span className="icon"></span>
-            <input type="Password" required/>
-            <label> Password</label>
+            <> Email</>
           </div>
           
-          <label><input type="checkbox"/>Remember me </label>
+          <div className="input-box">
+            <span className="icon"></span>
+            <input type="Password" required />
+            <> Password</> 
+          </div>
+
+          <label>
+            <input type="checkbox" />
+            Remember me{" "}
+          </label>
           <a href="/">Forget Password?</a>
         </div>
-        <button type="submit" className="btn">Login</button>
+        <button type="submit" className="btn">
+          Login
+        </button>
         <div className="login-register">
-          <p>Don't have an accoiunt?
-            <a href="/"className="regsiter-link">Register</a></p>
+          <p>
+            Don't have an accoiunt?
+            <a href="/" className="regsiter-link">
+              Register
+            </a>
+          </p>
         </div>
       </div>
     </div>

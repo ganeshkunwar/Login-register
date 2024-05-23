@@ -20,13 +20,13 @@ function App() {
           <div className="input-box">
             <span className="icon"></span>
             <input type="email" required />
-            <> Email</>
+            <label> Email</label>
           </div>
           
           <div className="input-box">
             <span className="icon"></span>
             <input type="Password" required />
-            <> Password</> 
+            <label> Password</label> 
           </div>
 
           <label>

@@ -89,18 +89,19 @@ transform: scaleX(1);
 .wrapper{
   position: relative;
   width: 400PX;
-  height: 440px;
+  height: 500px;
   background:rgb(154, 167, 223);
   border: 2px solid #2f5197;
   border-radius: 20px ;
   backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgb(0, 0, 5);
-  display:flex;
+  /* display:flex ; */
+ 
  justify-content: center;
 }
 .wrapper .form-box {
   width: 100%;
-  padding: 90px;
+  padding: 30px;
 
 }
 .form-box h2{
@@ -123,18 +124,88 @@ transform: scaleX(1);
   font-size: 1em;
   color: #162938;
   font-weight: 500;
+  display: flex;
   pointer-events: none;
+  transition: .5s;
 }
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+  top: -5px;
+}
+
+
 .input-box input{
   width: 100%;
   height: 100%;
   background: transparent;
   border: none;
   outline: none;
+  font-size: 1em;
+  color: #0e0e34;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+
 
 }
 .input-box .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #162938;
+  line-height: 57PX;
 
 }
-    
+.remember-forget{
+  font-size: 1em;
+  color: #162938;
+  font-weight: 500;
+  margin: -15px 0 15px ;
+  font-style: italic;
+  display: flex;
+  justify-content:space-between ;
+}
 
+.remember-forget label input {
+  accent-color:#162938;
+  margin-right: 3px;
+}
+.remember-forget a {
+  color: #162938;
+  text-decoration: none;
+
+}
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+.btn{
+  width: 100%;
+  height: 35px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.login-register{
+  font-size: 1.2em;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin:25px 0 10px ;
+}
+
+.login-register p a {
+  color: #162938;
+  text-decoration: none;
+  font-weight: 600;
+ 
+}
+.login-register p a:hover {
+  text-decoration: underline;
+  
+}

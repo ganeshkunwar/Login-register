@@ -28,23 +28,25 @@ function App() {
             <input type="Password" required />
             <label> Password</label> 
           </div>
+          <div className="remember-forget">
+            <label><input type="checkbox" />
+            Remember me</label>
 
-          <label>
-            <input type="checkbox" />
-            Remember me{" "}
-          </label>
           <a href="/">Forget Password?</a>
-        </div>
+       
+          </div>
         <button type="submit" className="btn">
-          Login
+         <> Login</>
         </button>
         <div className="login-register">
           <p>
-            Don't have an accoiunt?
+           Don't have an account? 
             <a href="/" className="regsiter-link">
               Register
             </a>
+            
           </p>
+          </div>
         </div>
       </div>
     </div>

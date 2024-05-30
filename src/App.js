@@ -13,8 +13,7 @@ function App() {
           <button class="btnLogin-popup">Login</button>
         </navbar>
       </header>
-      <div className="wrapper">
-        <div className="form-box login">
+      <div className="form-box login">
           <h2>Login</h2>
           <form action="#"></form>
           <div className="input-box">
@@ -22,33 +21,71 @@ function App() {
             <input type="email" required />
             <label> Email</label>
           </div>
-          
+
           <div className="input-box">
             <span className="icon"></span>
             <input type="Password" required />
-            <label> Password</label> 
+            <label> Password</label>
           </div>
           <div className="remember-forget">
-            <label><input type="checkbox" />
-            Remember me</label>
+            <label>
+              <input type="checkbox" />
+              Remember me
+            </label>
 
-          <a href="/">Forget Password?</a>
-       
+            <a href="/">Forget Password?</a>
           </div>
-        <button type="submit" className="btn">
-         <> Login</>
-        </button>
-        <div className="login-register">
-          <p>
-           Don't have an account? 
-            <a href="/" className="regsiter-link">
-              Register
-            </a>
-            
-          </p>
+          <button type="submit" className="btn">
+            <> Login</>
+          </button>
+          <div className="login-register">
+            <p>
+              Don't have an account?
+              <a href="/" className="regsiter-link">
+                Register
+              </a>
+            </p>
           </div>
         </div>
-      </div>
+        <div className="form-box login">
+          <h2>Registration</h2>
+          <form action="#"></form>
+          <div className="input-box">
+            <span className="icon"></span>
+            <input type="username" required />
+            <label> username</label>
+          </div>
+          <div className="input-box">
+            <span className="icon"></span>
+            <input type="email" required />
+            <label> email</label>
+          </div>
+
+          <div className="input-box">
+            <span className="icon"></span>
+            <input type="Password" required />
+            <label> Password</label>
+          </div>
+          <div className="remember-forget">
+            <label>
+              <input type="checkbox" />
+              Remember me
+            </label>
+
+            <a href="/">Forget Password?</a>
+          </div>
+          <button type="submit" className="btn">
+            <> Login</>
+          </button>
+          <div className="login-register">
+            <p>
+              Don't have an account?
+              <a href="/" className="regsiter-link">
+                Register
+              </a>
+            </p>
+          </div>
+        </div>
     </div>
   );
 }

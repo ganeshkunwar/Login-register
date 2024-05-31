@@ -1,4 +1,6 @@
 import "./App.css";
+import Register from "./Components/Loginregister/Register";
+import { IoClose } from "react-icons/io5";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
           <button class="btnLogin-popup">Login</button>
         </navbar>
       </header>
-      <div className="form-box login">
+      <div className="wrapper">
+        <IoClose />
+        <div className="form-box login">
           <h2>Login</h2>
           <form action="#"></form>
           <div className="input-box">
@@ -47,45 +51,9 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="form-box login">
-          <h2>Registration</h2>
-          <form action="#"></form>
-          <div className="input-box">
-            <span className="icon"></span>
-            <input type="username" required />
-            <label> username</label>
-          </div>
-          <div className="input-box">
-            <span className="icon"></span>
-            <input type="email" required />
-            <label> email</label>
-          </div>
 
-          <div className="input-box">
-            <span className="icon"></span>
-            <input type="Password" required />
-            <label> Password</label>
-          </div>
-          <div className="remember-forget">
-            <label>
-              <input type="checkbox" />
-              Remember me
-            </label>
-
-            <a href="/">Forget Password?</a>
-          </div>
-          <button type="submit" className="btn">
-            <> Login</>
-          </button>
-          <div className="login-register">
-            <p>
-              Don't have an account?
-              <a href="/" className="regsiter-link">
-                Register
-              </a>
-            </p>
-          </div>
-        </div>
+        <Register />
+      </div>
     </div>
   );
 }
